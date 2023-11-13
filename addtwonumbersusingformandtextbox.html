@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Two Numbers Using Form And Textbox</title>
+	<script type="text/javascript">
+		function add(){
+			var numOne, numTwo, sum;
+			numOne = parseInt(document.getElementById("first").value);
+			numTwo = parseInt(document.getElementById("second").value);
+			sum = numOne + numTwo;
+			document.getElementById("addition").value = sum;
+		}
+		function sub(){
+			var numOne, numTwo, sum;
+			numOne = parseInt(document.getElementById("first").value);
+			numTwo = parseInt(document.getElementById("second").value);
+			sub = numOne - numTwo;
+			document.getElementById("substraction").value = sub;
+		}
+		function mul(){
+			var numOne, numTwo, sum;
+			numOne = parseInt(document.getElementById("first").value);
+			numTwo = parseInt(document.getElementById("second").value);
+			mul = numOne * numTwo;
+			document.getElementById("multiplication").value = mul;
+		}
+		function div(){
+			var numOne, numTwo, sum;
+			numOne = parseInt(document.getElementById("first").value);
+			numTwo = parseInt(document.getElementById("second").value);
+			div = numOne / numTwo;
+			document.getElementById("dividation").value = div;
+		}
+	</script>
+</head>
+<body>
+	<p>Enter the First Number: <input id="first"></p>
+	<p>Enter the Second Number: <input id="second"></p>
+	<button onclick="add()">Add</button>
+	<p>result= <input id="addition"></p>
+	<p><button onclick="sub()">substract</button></p>
+	<p>result= <input id="substraction"></p>
+	<p><button onclick="mul()">Multiply</button></p>
+	<p>result= <input id="multiplication"></p>
+	<p><button onclick="div()">Divide</button></p>
+	<p>result= <input id="dividation"></p>
+</body>
+</html>
